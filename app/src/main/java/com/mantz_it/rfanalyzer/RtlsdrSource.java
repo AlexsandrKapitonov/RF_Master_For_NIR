@@ -54,8 +54,10 @@ public class RtlsdrSource implements IQSourceInterface {
 	public static final int RTL_TCP_COMMAND_SET_FREQ_CORR 	= 0x05;
 	public static final int RTL_TCP_COMMAND_SET_IFGAIN 		= 0x06;
 	public static final int RTL_TCP_COMMAND_SET_AGC_MODE 	= 0x08;
+	public static final int RTL_TCP_COMMAND_BIAS_TEE		= 0x0e;
 	public final String[] COMMAND_NAME = {"invalid", "SET_FREQUENY", "SET_SAMPLERATE", "SET_GAIN_MODE",
-			"SET_GAIN", "SET_FREQ_CORR", "SET_IFGAIN", "SET_TEST_MODE", "SET_ADC_MODE"};
+			"SET_GAIN", "SET_FREQ_CORR", "SET_IFGAIN", "SET_TEST_MODE", "SET_ADC_MODE", "SET_DIRECT_SAMPLING",
+			"SET_OFFSET_TUNNING", "SET_RTL_XTAL", "SET_TUNER_XTAL", "SET_TUNER_GAIN_BY_ID", "SET_ANTENNAPOWER"};
 
 	private ReceiverThread receiverThread = null;
 	private CommandThread commandThread = null;
@@ -74,6 +76,10 @@ public class RtlsdrSource implements IQSourceInterface {
 	private int sampleRate = 0;
 	private int gain = 0;
 	private int ifGain = 0;
+
+	private boolean antennaPower = false;
+	public boolean isAntennaPowerOn() {return antennaPower;}
+
 	private boolean manualGain = true;	// true == manual; false == automatic
 	private int frequencyCorrection = 0;
 	private boolean automaticGainControl = false;
@@ -359,6 +365,15 @@ public class RtlsdrSource implements IQSourceInterface {
 			}
 		}
 		this.frequencyCorrection = ppm;
+	}
+
+	public void set_Bias_Tee(boolean antennaPower) {
+		if (isOpen()) {
+			if (!commandThread.executeCommand(commandToByteArray(RTL_TCP_COMMAND_BIAS_TEE, (int) (antennaPower ? 0x01 : 0x00)))) {
+				Log.e(LOGTAG, "Bias tee: failed.");
+			}
+		}
+		this.antennaPower = antennaPower;
 	}
 
 	public boolean isAutomaticGainControl() {

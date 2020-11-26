@@ -40,6 +40,8 @@ public class AnalyzerProcessingLoop extends Thread {
 	private boolean dynamicFrameRate = true;	// Turns on and off the automatic frame rate control
 	private boolean stopRequested = true;		// Will stop the thread when set to true
 	private float[] mag = null;					// Magnitude of the frequency spectrum
+	
+
 
 	private static final String LOGTAG = "AnalyzerProcessingLoop";
 	private static final int MAX_FRAMERATE = 30;		// Upper limit for the automatic frame rate control
@@ -214,7 +216,7 @@ public class AnalyzerProcessingLoop extends Thread {
 			realPower = realPower * realPower;
 			imagPower = im[i]/fftSize;
 			imagPower = imagPower * imagPower;
-			mag[targetIndex] = (float) (10* Math.log10(Math.sqrt(realPower + imagPower)));
+			mag[targetIndex] = (float) (10* Math.log10(realPower + imagPower)+30);
 		}
 	}
 }

@@ -19,204 +19,203 @@
     <string name="action_recordOn">Stop recording</string>
     <string name="action_bookmarks">Bookmarks</string>
     <string name="action_autoscale">Autoscale</string>
-    <string name="help_url">https://github.com/demantz/RFAnalyzer/blob/master/doc/rf_analyzer_manual.md</string>
+    <string name="help_url" translatable="false">https://github.com/demantz/RFAnalyzer/blob/master/doc/rf_analyzer_manual.md</string>
     <string name="hackrf_vga_gain_label">VGA Gain:</string>
     <string name="hackrf_lna_gain_label">LNA Gain:</string>
     <string name="rtlsdr_manual_gain_label">Manual gain:</string>
     <string name="rtlsdr_agc_label">AGC:</string>
     <string name="rtlsdr_gain_label">Gain:</string>
     <string name="rtlsdr_ifgain_label">IF Gain:</string>
-    <string name="filesource_doesnt_support_gain">A file source doesn\'t support gain adjustment!</string>
     <string name="rtl2832u_is_not_installed">RTL2832U driver is not installed</string>
     <string name="warning_recording_is_running">Warning: Recording is running!</string>
-    <string name="tuneToFrequency_setFrequencyRange">Set bandwidth:</string>
+    <string name="tuneToFrequency_setFrequencyRange" translatable="false">Set bandwidth:</string>
     <string name="recording_filename">File name:</string>
     <string name="recording_frequency">Center frequency (Hz or MHz):</string>
     <string name="recording_sampleRate">Sample rate:</string>
     <string name="recording_fixedSampleRateHint">Sample rate is fixed because demodulation is running!</string>
     <string name="recording_stopAfter">Stop after:</string>
-    <string name="save_state_running">save_state_running</string>
-    <string name="save_state_demodulatorMode">save_state_demodulatorMode</string>
-    <string name="save_state_channelFrequency">save_state_channelFrequency</string>
-    <string name="save_state_channelWidth">save_state_channelWidth</string>
-    <string name="save_state_squelch">save_state_squelch</string>
-    <string name="save_state_virtualFrequency">save_state_virtualFrequency</string>
-    <string name="save_state_virtualSampleRate">save_state_virtualSampleRate</string>
-    <string name="save_state_minDB">save_state_minDB</string>
-    <string name="save_state_maxDB">save_state_maxDB</string>
-    <string name="pref_frequency">pref_frequency</string>
-    <string name="pref_sampleRate">pref_sampleRate</string>
-    <string name="pref_tune_to_frequency_unit">pref_tune_to_frequency_unit</string>
-    <string name="pref_tune_to_frequency_setBandwidth">pref_tune_to_frequency_setBandwidth</string>
-    <string name="pref_tune_to_frequency_bandwidth">pref_tune_to_frequency_bandwidth</string>
-    <string name="pref_tune_to_frequency_bandwidthUnit">pref_tune_to_frequency_bandwidthUnit</string>
-    <string name="pref_recordingSampleRate">pref_recordingSampleRate</string>
-    <string name="pref_recordingStopAfterEnabled">pref_recordingStopAfterEnabled</string>
-    <string name="pref_recordingStopAfterValue">pref_recordingStopAfterValue</string>
-    <string name="pref_recordingStopAfterUnit">pref_recordingStopAfterUnit</string>
-    <string name="pref_hackrf_vgaRxGain">pref_hackrf_vgaRxGain</string>
-    <string name="pref_hackrf_lnaGain">pref_hackrf_lnaGain</string>
-    <string name="pref_rtlsdr_manual_gain">pref_rtlsdr_manual_gain</string>
-    <string name="pref_rtlsdr_agc">pref_rtlsdr_agc</string>
-    <string name="pref_rtlsdr_gain">pref_rtlsdr_gain</string>
-    <string name="pref_rtlsdr_ifGain">pref_rtlsdr_ifGain</string>
-    <string name="pref_signalProcessing_category">pref_signalProcessing_category</string>
-    <string name="pref_signalProcessing_category_title">Signal Processing</string>
-    <string name="pref_sourceType">pref_sourceType</string>
+    <string name="save_state_running" translatable="false">save_state_running</string>
+    <string name="save_state_demodulatorMode" translatable="false">save_state_demodulatorMode</string>
+    <string name="save_state_channelFrequency" translatable="false">save_state_channelFrequency</string>
+    <string name="save_state_channelWidth" translatable="false">save_state_channelWidth</string>
+    <string name="save_state_squelch" translatable="false">save_state_squelch</string>
+    <string name="save_state_virtualFrequency" translatable="false">save_state_virtualFrequency</string>
+    <string name="save_state_virtualSampleRate" translatable="false">save_state_virtualSampleRate</string>
+    <string name="save_state_minDB" translatable="false">save_state_minDB</string>
+    <string name="save_state_maxDB" translatable="false">save_state_maxDB</string>
+    <string name="pref_frequency" translatable="false">pref_frequency</string>
+    <string name="pref_sampleRate" translatable="false">pref_sampleRate</string>
+    <string name="pref_tune_to_frequency_unit" translatable="false">pref_tune_to_frequency_unit</string>
+    <string name="pref_tune_to_frequency_setBandwidth" translatable="false">pref_tune_to_frequency_setBandwidth</string>
+    <string name="pref_tune_to_frequency_bandwidth" translatable="false">pref_tune_to_frequency_bandwidth</string>
+    <string name="pref_tune_to_frequency_bandwidthUnit" translatable="false">pref_tune_to_frequency_bandwidthUnit</string>
+    <string name="pref_recordingSampleRate" translatable="false">pref_recordingSampleRate</string>
+    <string name="pref_recordingStopAfterEnabled" translatable="false">pref_recordingStopAfterEnabled</string>
+    <string name="pref_recordingStopAfterValue" translatable="false">pref_recordingStopAfterValue</string>
+    <string name="pref_recordingStopAfterUnit" translatable="false">pref_recordingStopAfterUnit</string>
+    <string name="pref_hackrf_vgaRxGain" translatable="false">pref_hackrf_vgaRxGain</string>
+    <string name="pref_hackrf_lnaGain" translatable="false">pref_hackrf_lnaGain</string>
+    <string name="pref_rtlsdr_manual_gain" translatable="false">pref_rtlsdr_manual_gain</string>
+    <string name="pref_rtlsdr_agc" translatable="false">pref_rtlsdr_agc</string>
+    <string name="pref_rtlsdr_gain" translatable="false">pref_rtlsdr_gain</string>
+    <string name="pref_rtlsdr_ifGain" translatable="false">pref_rtlsdr_ifGain</string>
+    <string name="pref_signalProcessing_category" translatable="false">pref_signalProcessing_category</string>
+    <string name="pref_signalProcessing_category_title" translatable="false">Signal Processing</string>
+    <string name="pref_sourceType" translatable="false">pref_sourceType</string>
     <string name="pref_sourceType_title">Source Type</string>
     <string name="pref_sourceType_default">1</string>
-    <string name="pref_sourceType_summ">Source type is set to: %s</string>
-    <string name="pref_sourceSettings">pref_sourceSettings</string>
+    <string name="pref_sourceType_summ" translatable="false">Source type is set to: %s</string>
+    <string name="pref_sourceSettings" translatable="false">pref_sourceSettings</string>
     <string name="pref_sourceSettings_title">Source Settings</string>
-    <string name="pref_filesource_category">pref_filesource_category</string>
+    <string name="pref_filesource_category" translatable="false">pref_filesource_category</string>
     <string name="pref_filesource_category_title">File Source Settings</string>
-    <string name="pref_filesource_frequency">pref_filesource_frequency</string>
-    <string name="pref_filesource_frequency_title">File Source: Frequency (Hz)</string>
-    <string name="pref_filesource_frequency_summ">Baseband Frequency of the recorded file: %s Hz</string>
-    <string name="pref_filesource_frequency_default">97000000</string>
-    <string name="pref_filesource_sampleRate">pref_filesource_sampleRate</string>
-    <string name="pref_filesource_sampleRate_title">File Source: Sample Rate (Sps)</string>
-    <string name="pref_filesource_sampleRate_summ">Sample rate of the recorded file: %s Sps</string>
-    <string name="pref_filesource_sampleRate_default">2000000</string>
-    <string name="pref_filesource_file">pref_filesource_file</string>
-    <string name="pref_filesource_file_title">Source File</string>
-    <string name="pref_filesource_file_summ">File path: %s</string>
-    <string name="pref_filesource_file_default">Test_Hackrf/hackrf_android.iq</string>
-    <string name="pref_filesource_format">pref_filesource_format</string>
-    <string name="pref_filesource_format_title">File format:</string>
-    <string name="pref_filesource_format_default">0</string>
-    <string name="pref_filesource_format_summ">File format is set to: %s</string>
-    <string name="pref_filesource_repeat">pref_filesource_repeat</string>
+    <string name="pref_filesource_frequency" translatable="false">pref_filesource_frequency</string>
+    <string name="pref_filesource_frequency_title" translatable="false">File Source: Frequency (Hz)</string>
+    <string name="pref_filesource_frequency_summ" translatable="false">Baseband Frequency of the recorded file: %s Hz</string>
+    <string name="pref_filesource_frequency_default" translatable="false">97000000</string>
+    <string name="pref_filesource_sampleRate" translatable="false">pref_filesource_sampleRate</string>
+    <string name="pref_filesource_sampleRate_title" translatable="false">File Source: Sample Rate (Sps)</string>
+    <string name="pref_filesource_sampleRate_summ" translatable="false">Sample rate of the recorded file: %s Sps</string>
+    <string name="pref_filesource_sampleRate_default" translatable="false">2000000</string>
+    <string name="pref_filesource_file" translatable="false">pref_filesource_file</string>
+    <string name="pref_filesource_file_title" translatable="false">Source File</string>
+    <string name="pref_filesource_file_summ" translatable="false">File path: %s</string>
+    <string name="pref_filesource_file_default" translatable="false">Test_Hackrf/hackrf_android.iq</string>
+    <string name="pref_filesource_format" translatable="false">pref_filesource_format</string>
+    <string name="pref_filesource_format_title" translatable="false">File format:</string>
+    <string name="pref_filesource_format_default" translatable="false">0</string>
+    <string name="pref_filesource_format_summ" translatable="false">File format is set to: %s</string>
+    <string name="pref_filesource_repeat" translatable="false">pref_filesource_repeat</string>
     <string name="pref_filesource_repeat_title">Repeat</string>
-    <string name="pref_filesource_repeat_summ_on">Start from beginning after end of file</string>
-    <string name="pref_filesource_repeat_summ_off">Stop after end of file</string>
-    <string name="pref_hackrf_category">pref_hackrf_category</string>
+    <string name="pref_filesource_repeat_summ_on" translatable="false">Start from beginning after end of file</string>
+    <string name="pref_filesource_repeat_summ_off" translatable="false">Stop after end of file</string>
+    <string name="pref_hackrf_category" translatable="false">pref_hackrf_category</string>
     <string name="pref_hackrf_category_title">HackRF Settings</string>
-    <string name="pref_hackrf_amplifier">pref_hackrf_amplifier</string>
-    <string name="pref_hackrf_amplifier_title">RF amplifier</string>
-    <string name="pref_hackrf_amplifier_summ_on">RF amplifier is activated</string>
-    <string name="pref_hackrf_amplifier_summ_off">RF amplifier is deactivated</string>
-    <string name="pref_hackrf_antennaPower">pref_hackrf_antennaPower</string>
-    <string name="pref_hackrf_antennaPower_title">Antenna Power</string>
+    <string name="pref_hackrf_amplifier" translatable="false">pref_hackrf_amplifier</string>
+    <string name="pref_hackrf_amplifier_title" translatable="false">RF amplifier</string>
+    <string name="pref_hackrf_amplifier_summ_on" translatable="false">RF amplifier is activated</string>
+    <string name="pref_hackrf_amplifier_summ_off" translatable="false">RF amplifier is deactivated</string>
+    <string name="pref_hackrf_antennaPower" translatable="false">pref_hackrf_antennaPower</string>
+    <string name="pref_hackrf_antennaPower_title">Antenna Power (RTL also)</string>
     <string name="pref_hackrf_antennaPower_summ_on">Antenna power is activated</string>
     <string name="pref_hackrf_antennaPower_summ_off">Antenna power is deactivated</string>
-    <string name="pref_hackrf_frequencyOffset">pref_hackrf_frequencyOffset</string>
-    <string name="pref_hackrf_frequencyOffset_title">Up-/Down-converter frequency offset (Hz)</string>
-    <string name="pref_hackrf_frequencyOffset_summ">Frequencies are shown at an offset: %s Hz</string>
-    <string name="pref_rtlsdr_category">pref_rtlsdr_category</string>
+    <string name="pref_hackrf_frequencyOffset" translatable="false">pref_hackrf_frequencyOffset</string>
+    <string name="pref_hackrf_frequencyOffset_title" translatable="false">Up-/Down-converter frequency offset (Hz)</string>
+    <string name="pref_hackrf_frequencyOffset_summ" translatable="false">Frequencies are shown at an offset: %s Hz</string>
+    <string name="pref_rtlsdr_category" translatable="false">pref_rtlsdr_category</string>
     <string name="pref_rtlsdr_category_title">RTL-SDR Settings</string>
-    <string name="pref_rtlsdr_externalServer">pref_rtlsdr_externalServer</string>
-    <string name="pref_rtlsdr_externalServer_title">Use external rtl_tcp server</string>
-    <string name="pref_rtlsdr_externalServer_summ_on">Using external server</string>
-    <string name="pref_rtlsdr_externalServer_summ_off">Using local device</string>
-    <string name="pref_rtlsdr_ip">pref_rtlsdr_ip</string>
-    <string name="pref_rtlsdr_ip_title">IP address</string>
-    <string name="pref_rtlsdr_ip_summ">IP of the rtl_tcp server: %s</string>
-    <string name="pref_rtlsdr_ip_default">192.168.0.100</string>
-    <string name="pref_rtlsdr_port">pref_rtlsdr_port</string>
-    <string name="pref_rtlsdr_port_title">TCP port</string>
-    <string name="pref_rtlsdr_port_summ">TCP port of the rtl_tcp server: %s</string>
-    <string name="pref_rtlsdr_port_default">1234</string>
-    <string name="pref_rtlsdr_frequencyCorrection">pref_rtlsdr_frequencyCorrection</string>
-    <string name="pref_rtlsdr_frequencyCorrection_title">Frequency correction (ppm)</string>
-    <string name="pref_rtlsdr_frequencyCorrection_summ">Frequency correction is set to: %s ppm</string>
-    <string name="pref_rtlsdr_frequencyCorrection_default">0</string>
-    <string name="pref_rtlsdr_frequencyOffset">pref_rtlsdr_frequencyOffset</string>
-    <string name="pref_rtlsdr_frequencyOffset_title">Up-/Down-converter frequency offset (Hz)</string>
-    <string name="pref_rtlsdr_frequencyOffset_summ">Frequencies are shown at an offset: %s Hz</string>
-    <string name="pref_fftSize">pref_fftSize</string>
-    <string name="pref_fftSize_title">FFT Size</string>
-    <string name="pref_fftSize_default">4096</string>
-    <string name="pref_fftSize_summ">FFT size is set to: %s</string>
-    <string name="pref_averaging">pref_averaging</string>
-    <string name="pref_averaging_title">Averaging</string>
-    <string name="pref_averaging_default">0</string>
-    <string name="pref_averaging_summ">Averaging is set to: %s</string>
-    <string name="pref_peakHold">pref_peakHold</string>
-    <string name="pref_peakHold_title">Peak hold</string>
-    <string name="pref_peakHold_summ_on">Peak hold is turned on</string>
-    <string name="pref_peakHold_summ_off">Peak hold is turned off</string>
-    <string name="pref_autostart">pref_autostart</string>
+    <string name="pref_rtlsdr_externalServer" translatable="false">pref_rtlsdr_externalServer</string>
+    <string name="pref_rtlsdr_externalServer_title" translatable="false">Use external rtl_tcp server</string>
+    <string name="pref_rtlsdr_externalServer_summ_on" translatable="false">Using external server</string>
+    <string name="pref_rtlsdr_externalServer_summ_off" translatable="false">Using local device</string>
+    <string name="pref_rtlsdr_ip" translatable="false">pref_rtlsdr_ip</string>
+    <string name="pref_rtlsdr_ip_title" translatable="false">IP address</string>
+    <string name="pref_rtlsdr_ip_summ" translatable="false">IP of the rtl_tcp server: %s</string>
+    <string name="pref_rtlsdr_ip_default" translatable="false">192.168.0.100</string>
+    <string name="pref_rtlsdr_port" translatable="false">pref_rtlsdr_port</string>
+    <string name="pref_rtlsdr_port_title" translatable="false">TCP port</string>
+    <string name="pref_rtlsdr_port_summ" translatable="false">TCP port of the rtl_tcp server: %s</string>
+    <string name="pref_rtlsdr_port_default" translatable="false">1234</string>
+    <string name="pref_rtlsdr_frequencyCorrection" translatable="false">pref_rtlsdr_frequencyCorrection</string>
+    <string name="pref_rtlsdr_frequencyCorrection_title" translatable="false">Frequency correction (ppm)</string>
+    <string name="pref_rtlsdr_frequencyCorrection_summ" translatable="false">Frequency correction is set to: %s ppm</string>
+    <string name="pref_rtlsdr_frequencyCorrection_default" translatable="false">0</string>
+    <string name="pref_rtlsdr_frequencyOffset" translatable="false">pref_rtlsdr_frequencyOffset</string>
+    <string name="pref_rtlsdr_frequencyOffset_title" translatable="false">Up-/Down-converter frequency offset (Hz)</string>
+    <string name="pref_rtlsdr_frequencyOffset_summ" translatable="false">Frequencies are shown at an offset: %s Hz</string>
+    <string name="pref_fftSize" translatable="false">pref_fftSize</string>
+    <string name="pref_fftSize_title" translatable="false">FFT Size</string>
+    <string name="pref_fftSize_default" translatable="false">4096</string>
+    <string name="pref_fftSize_summ" translatable="false">FFT size is set to: %s</string>
+    <string name="pref_averaging" translatable="false">pref_averaging</string>
+    <string name="pref_averaging_title" translatable="false">Averaging</string>
+    <string name="pref_averaging_default" translatable="false">0</string>
+    <string name="pref_averaging_summ" translatable="false">Averaging is set to: %s</string>
+    <string name="pref_peakHold" translatable="false">pref_peakHold</string>
+    <string name="pref_peakHold_title" translatable="false">Peak hold</string>
+    <string name="pref_peakHold_summ_on" translatable="false">Peak hold is turned on</string>
+    <string name="pref_peakHold_summ_off" translatable="false">Peak hold is turned off</string>
+    <string name="pref_autostart" translatable="false">pref_autostart</string>
     <string name="pref_autostart_title">Auto start</string>
-    <string name="pref_autostart_summ_on">FFT starts at application start</string>
-    <string name="pref_autostart_summ_off">FFT has to be started manually</string>
-    <string name="pref_view_category">pref_view_category</string>
-    <string name="pref_view_category_title">View</string>
-    <string name="pref_colorMapType">pref_colorMapType</string>
-    <string name="pref_colorMapType_title">Color map type</string>
-    <string name="pref_colorMapType_default">4</string>
-    <string name="pref_colorMapType_summ">Color map type is set to: %s</string>
-    <string name="pref_fftDrawingType">pref_fftDrawingType</string>
-    <string name="pref_fftDrawingType_title">FFT drawing type</string>
-    <string name="pref_fftDrawingType_default">2</string>
-    <string name="pref_fftDrawingType_summ">FFT drawing type is set to: %s</string>
-    <string name="pref_screenOrientation">pref_screenOrientation</string>
+    <string name="pref_autostart_summ_on" translatable="false">FFT starts at application start</string>
+    <string name="pref_autostart_summ_off" translatable="false">FFT has to be started manually</string>
+    <string name="pref_view_category" translatable="false">pref_view_category</string>
+    <string name="pref_view_category_title" translatable="false">View</string>
+    <string name="pref_colorMapType" translatable="false">pref_colorMapType</string>
+    <string name="pref_colorMapType_title" translatable="false">Color map type</string>
+    <string name="pref_colorMapType_default" translatable="false">4</string>
+    <string name="pref_colorMapType_summ" translatable="false">Color map type is set to: %s</string>
+    <string name="pref_fftDrawingType" translatable="false">pref_fftDrawingType</string>
+    <string name="pref_fftDrawingType_title" translatable="false">FFT drawing type</string>
+    <string name="pref_fftDrawingType_default" translatable="false">2</string>
+    <string name="pref_fftDrawingType_summ" translatable="false">FFT drawing type is set to: %s</string>
+    <string name="pref_screenOrientation" translatable="false">pref_screenOrientation</string>
     <string name="pref_screenOrientation_title">Screen orientation</string>
     <string name="pref_screenOrientation_default">auto</string>
-    <string name="pref_screenOrientation_summ">Screen orientation is set to: %s</string>
-    <string name="pref_spectrumWaterfallRatio">pref_spectrumWaterfallRatio</string>
-    <string name="pref_spectrumWaterfallRatio_title">Spectrum - Waterfall ratio</string>
-    <string name="pref_spectrumWaterfallRatio_default">0.5</string>
-    <string name="pref_spectrumWaterfallRatio_summ">Ratio is set to: %s</string>
-    <string name="pref_zoomDB">pref_zoomDB</string>
-    <string name="pref_zoomDB_title">Vertical pinch to zoom</string>
-    <string name="pref_zoomDB_summ_on">Vertical zoom is enabled</string>
-    <string name="pref_zoomDB_summ_off">Vertical zoom is disabled</string>
-    <string name="pref_scrollDB">pref_scrollDB</string>
+    <string name="pref_screenOrientation_summ" translatable="false">Screen orientation is set to: %s</string>
+    <string name="pref_spectrumWaterfallRatio" translatable="false">pref_spectrumWaterfallRatio</string>
+    <string name="pref_spectrumWaterfallRatio_title" translatable="false">Spectrum - Waterfall ratio</string>
+    <string name="pref_spectrumWaterfallRatio_default" translatable="false">0.5</string>
+    <string name="pref_spectrumWaterfallRatio_summ" translatable="false">Ratio is set to: %s</string>
+    <string name="pref_zoomDB" translatable="false">pref_zoomDB</string>
+    <string name="pref_zoomDB_title" translatable="false">Vertical pinch to zoom</string>
+    <string name="pref_zoomDB_summ_on" translatable="false">Vertical zoom is enabled</string>
+    <string name="pref_zoomDB_summ_off" translatable="false">Vertical zoom is disabled</string>
+    <string name="pref_scrollDB" translatable="false">pref_scrollDB</string>
     <string name="pref_scrollDB_title">Vertical scrolling</string>
     <string name="pref_scrollDB_summ_on">Vertical scroll is enabled</string>
     <string name="pref_scrollDB_summ_off">Vertical scroll is disabled</string>
-    <string name="pref_decoupledAxis">pref_decoupledAxis</string>
-    <string name="pref_decoupledAxis_title">Separate horizontal/vertical zoom/scroll</string>
-    <string name="pref_decoupledAxis_summ_on">Vertical zoom/scroll only in the left area</string>
-    <string name="pref_decoupledAxis_summ_off">Vertical zoom/scroll everywhere</string>
-    <string name="pref_relativeFrequencies">pref_relativeFrequencies</string>
-    <string name="pref_relativeFrequencies_title">Relative Frequencies</string>
-    <string name="pref_relativeFrequencies_summ_on">Frequencies are displayed relative to center frequency</string>
-    <string name="pref_relativeFrequencies_summ_off">Frequencies are displayed absolute</string>
-    <string name="pref_advancedSettings">pref_advancedSettings</string>
+    <string name="pref_decoupledAxis" translatable="false">pref_decoupledAxis</string>
+    <string name="pref_decoupledAxis_title" translatable="false">Separate horizontal/vertical zoom/scroll</string>
+    <string name="pref_decoupledAxis_summ_on" translatable="false">Vertical zoom/scroll only in the left area</string>
+    <string name="pref_decoupledAxis_summ_off" translatable="false">Vertical zoom/scroll everywhere</string>
+    <string name="pref_relativeFrequencies" translatable="false">pref_relativeFrequencies</string>
+    <string name="pref_relativeFrequencies_title" translatable="false">Relative Frequencies</string>
+    <string name="pref_relativeFrequencies_summ_on" translatable="false">Frequencies are displayed relative to center frequency</string>
+    <string name="pref_relativeFrequencies_summ_off" translatable="false">Frequencies are displayed absolute</string>
+    <string name="pref_advancedSettings" translatable="false">pref_advancedSettings</string>
     <string name="pref_advancedSettings_title">Advanced Settings</string>
-    <string name="pref_fontSize">pref_fontSize</string>
+    <string name="pref_fontSize" translatable="false">pref_fontSize</string>
     <string name="pref_fontSize_title">Font size</string>
-    <string name="pref_fontSize_default">2</string>
-    <string name="pref_fontSize_summ">Font size is set to: %s</string>
-    <string name="pref_showDebugInformation">pref_showDebugInformation</string>
+    <string name="pref_fontSize_default" translatable="false">2</string>
+    <string name="pref_fontSize_summ" translatable="false">Font size is set to: %s</string>
+    <string name="pref_showDebugInformation" translatable="false">pref_showDebugInformation</string>
     <string name="pref_showDebugInformation_title">Show debug information</string>
     <string name="pref_showDebugInformation_summ_on">Debug information is shown</string>
     <string name="pref_showDebugInformation_summ_off">Debug information is hidden</string>
-    <string name="pref_dynamicFrameRate">pref_dynamicFrameRate</string>
-    <string name="pref_dynamicFrameRate_title">Dynamic frame rate</string>
-    <string name="pref_dynamicFrameRate_summ_on">Frame rate is dynamically adjusted to the load</string>
-    <string name="pref_dynamicFrameRate_summ_off">Frame rate is fixed</string>
-    <string name="pref_frameRate">pref_frameRate</string>
-    <string name="pref_frameRate_title">Frame Rate</string>
-    <string name="pref_frameRate_default">10</string>
-    <string name="pref_frameRate_summ">Frame rate is set to: %s</string>
-    <string name="pref_logging">pref_logging</string>
-    <string name="pref_logging_title">Logging</string>
-    <string name="pref_logging_summ_on">Logging is enabled</string>
-    <string name="pref_logging_summ_off">Logging is disabled</string>
-    <string name="pref_showLog">pref_showLog</string>
-    <string name="pref_showLog_title">Show Log</string>
-    <string name="pref_logfile">pref_logfile</string>
-    <string name="pref_logfile_title">Log File</string>
-    <string name="pref_logfile_summ">File path: %s</string>
-    <string name="pref_logfile_default">RFAnalyzer/log.txt</string>
+    <string name="pref_dynamicFrameRate" translatable="false">pref_dynamicFrameRate</string>
+    <string name="pref_dynamicFrameRate_title" translatable="false">Dynamic frame rate</string>
+    <string name="pref_dynamicFrameRate_summ_on" translatable="false">Frame rate is dynamically adjusted to the load</string>
+    <string name="pref_dynamicFrameRate_summ_off" translatable="false">Frame rate is fixed</string>
+    <string name="pref_frameRate" translatable="false">pref_frameRate</string>
+    <string name="pref_frameRate_title" translatable="false">Frame Rate</string>
+    <string name="pref_frameRate_default" translatable="false">10</string>
+    <string name="pref_frameRate_summ" translatable="false">Frame rate is set to: %s</string>
+    <string name="pref_logging" translatable="false">pref_logging</string>
+    <string name="pref_logging_title" translatable="false">Logging</string>
+    <string name="pref_logging_summ_on" translatable="false">Logging is enabled</string>
+    <string name="pref_logging_summ_off" translatable="false">Logging is disabled</string>
+    <string name="pref_showLog" translatable="false">pref_showLog</string>
+    <string name="pref_showLog_title" translatable="false">Show Log</string>
+    <string name="pref_logfile" translatable="false">pref_logfile</string>
+    <string name="pref_logfile_title" translatable="false">Log File</string>
+    <string name="pref_logfile_summ" translatable="false">File path: %s</string>
+    <string name="pref_logfile_default" translatable="false">RFAnalyzer/log.txt</string>
     <string name="bookmarks_addBookmark">Add Bookmark</string>
     <string name="bookmarks_addCategory">Add Category</string>
     <string name="editBookmark_name">Name: </string>
-    <string name="editBookmark_category">Category: </string>
+    <string name="editBookmark_category" translatable="false">Category: </string>
     <string name="editBookmark_frequency">Frequency: </string>
-    <string name="editBookmark_channelWidth">Channel Width: </string>
-    <string name="editBookmark_mode">Mode: </string>
-    <string name="editBookmark_squelch">Squelch: </string>
-    <string name="editBookmark_comment">Comment: </string>
-    <string name="editBookmarkCategory_name">Name: </string>
-    <string name="editBookmarkCategory_description">Description: </string>
+    <string name="editBookmark_channelWidth" translatable="false">Channel Width: </string>
+    <string name="editBookmark_mode" translatable="false">Mode: </string>
+    <string name="editBookmark_squelch" translatable="false">Squelch: </string>
+    <string name="editBookmark_comment" translatable="false">Comment: </string>
+    <string name="editBookmarkCategory_name" translatable="false">Name: </string>
+    <string name="editBookmarkCategory_description" translatable="false">Description: </string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
-    <string name="info_title"><![CDATA[<h1>RF Analyzer %s</h1>]]></string>
-    <string name="info_msg_body"><![CDATA[
+    <string name="info_title" translatable="false"><![CDATA[<h1>RF Analyzer %s</h1>]]></string>
+    <string name="info_msg_body" translatable="false"><![CDATA[
 Copyright &#169; 2016 Dennis Mantz<br /><br />
 
 <h1>About the App</h1>
@@ -262,5 +261,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA</sm
 <br /><br />
 Get the source code of the app here on <a href=https://github.com/demantz/RFAnalyzer>GitHub</a>!
 ]]></string>
+    <string name="filesource_doesnt_support_gain">A file source doesn\'t support gain adjustment!</string>
 
 </resources>

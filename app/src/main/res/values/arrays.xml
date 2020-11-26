@@ -33,7 +33,7 @@
         <item>reverse_portrait</item>
     </string-array>
     <string-array name="pref_spectrumWaterfallRatio_entries">
-        <item>Spectrum 4:1 Waterfall</item>
+        <item>No Waterfall</item>
         <item>Spectrum 3:1 Waterfall</item>
         <item>Spectrum 2:1 Waterfall</item>
         <item>Spectrum 1:1 Waterfall</item>
@@ -42,7 +42,7 @@
         <item>Spectrum 1:4 Waterfall</item>
     </string-array>
     <string-array name="pref_spectrumWaterfallRatio_values">
-        <item>0.8</item>
+        <item>0.99</item>
         <item>0.75</item>
         <item>0.66</item>
         <item>0.5</item>

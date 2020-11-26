@@ -643,7 +643,7 @@ public class AnalyzerSurface extends SurfaceView implements SurfaceHolder.Callba
 				int maxSampleRate = demodulationEnabled ? (int) (source.getSampleRate() * 0.9) : source.getMaxSampleRate();
 				if(recordingEnabled)
 					maxSampleRate = source.getSampleRate();
-				virtualSampleRate = (int) Math.min(Math.max(virtualSampleRate / xScale, MIN_VIRTUAL_SAMPLERATE), maxSampleRate);
+				virtualSampleRate = (int) (virtualSampleRate / xScale);
 				virtualFrequency = Math.min(Math.max(frequencyFocus + (long) ((virtualFrequency - frequencyFocus) / xScale),
 						source.getMinFrequency() - source.getSampleRate() / 2), source.getMaxFrequency() + source.getSampleRate() / 2);
 

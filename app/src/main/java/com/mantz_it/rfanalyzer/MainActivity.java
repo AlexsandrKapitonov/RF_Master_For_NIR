@@ -581,6 +581,9 @@ public class MainActivity extends AppCompatActivity implements IQSourceInterface
 						String ip = preferences.getString(getString(R.string.pref_rtlsdr_ip), "");
 						int port = Integer.valueOf(preferences.getString(getString(R.string.pref_rtlsdr_port), "1234"));
 						boolean externalServer = preferences.getBoolean(getString(R.string.pref_rtlsdr_externalServer), false);
+						boolean antennaPower = preferences.getBoolean(getString(R.string.pref_hackrf_antennaPower), false);
+						if(((RtlsdrSource)source).isAntennaPowerOn() != antennaPower)
+							((RtlsdrSource)source).set_Bias_Tee(antennaPower);
 						if(externalServer) {
 							if(!ip.equals(((RtlsdrSource) source).getIpAddress()) || port != ((RtlsdrSource) source).getPort()) {
 								source.close();
