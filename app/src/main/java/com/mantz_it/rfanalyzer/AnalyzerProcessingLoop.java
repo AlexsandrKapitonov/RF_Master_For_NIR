@@ -153,8 +153,11 @@ public class AnalyzerProcessingLoop extends Thread {
 			// return samples to the buffer pool
 			returnQueue.offer(samples);
 
+
+
+
 			// Push the results on the surface:
-			view.draw(mag, frequency, sampleRate, frameRate, load);
+			view.draw(newMag(), frequency, sampleRate*10, frameRate, load);
 
 			// Calculate the remaining time in this frame (according to the frame rate) and sleep
 			// for that time:
@@ -218,5 +221,18 @@ public class AnalyzerProcessingLoop extends Thread {
 			imagPower = imagPower * imagPower;
 			mag[targetIndex] = (float) (10* Math.log10(realPower + imagPower)+30);
 		}
+	}
+
+	private float[] newMag() {
+		int sizeMag = mag.length;
+		float[] newMag = new float[sizeMag*10];
+
+		for (int i = 0; i<10; ++i) {
+			for (int j = 0; j < sizeMag; ++j) {
+				newMag[j+i*(sizeMag)] = mag[j];
+			}
+		}
+
+		return newMag;
 	}
 }
