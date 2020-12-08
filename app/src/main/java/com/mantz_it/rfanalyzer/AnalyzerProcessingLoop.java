@@ -157,7 +157,7 @@ public class AnalyzerProcessingLoop extends Thread {
 
 
 			// Push the results on the surface:
-			view.draw(newMag(), frequency, sampleRate*10, frameRate, load);
+			view.draw(newMag(), frequency, sampleRate*2, frameRate, load);
 
 			// Calculate the remaining time in this frame (according to the frame rate) and sleep
 			// for that time:
@@ -219,20 +219,28 @@ public class AnalyzerProcessingLoop extends Thread {
 			realPower = realPower * realPower;
 			imagPower = im[i]/fftSize;
 			imagPower = imagPower * imagPower;
-			mag[targetIndex] = (float) (10* Math.log10(realPower + imagPower)+30);
+			mag[targetIndex] = (float) (10* Math.log10(realPower + imagPower));
 		}
 	}
 
 	private float[] newMag() {
 		int sizeMag = mag.length;
-		float[] newMag = new float[sizeMag*10];
+		float[] newMag;
+		if (sizeMag % 2 == 0) {  newMag = new float[(sizeMag / 2)*2  ];
+		}
+		else {
+			newMag = new float[((sizeMag / 2) + 1) * 2];
+		}
+		int count = 0 ;
 
-		for (int i = 0; i<10; ++i) {
-			for (int j = 0; j < sizeMag; ++j) {
-				newMag[j+i*(sizeMag)] = mag[j];
+		for (int i = 0; i<2; ++i) {
+			for (int j = 0; j < sizeMag; j+=2) {
+				newMag[count] = mag[j];
+				count++;
 			}
 		}
 
 		return newMag;
 	}
 }
+
