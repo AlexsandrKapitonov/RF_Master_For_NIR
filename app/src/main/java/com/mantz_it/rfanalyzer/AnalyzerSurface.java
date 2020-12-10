@@ -633,7 +633,12 @@ public class AnalyzerSurface extends SurfaceView implements SurfaceHolder.Callba
 	}
 //------------------- </SurfaceHolder.Callback> -----------------------------//
 
-//------------------- <OnScaleGestureListener> ------------------------------//
+
+	public int SR() {
+		return source.getSampleRate();
+	}
+
+	//------------------- <OnScaleGestureListener> ------------------------------//
 	@Override
 	public boolean onScale(ScaleGestureDetector detector) {
 		if(source != null) {
@@ -645,6 +650,7 @@ public class AnalyzerSurface extends SurfaceView implements SurfaceHolder.Callba
 				if(recordingEnabled)
 					maxSampleRate = source.getSampleRate();
 				virtualSampleRate = (int) (virtualSampleRate / xScale);
+				if (virtualSampleRate < MIN_VIRTUAL_SAMPLERATE) virtualSampleRate = MIN_VIRTUAL_SAMPLERATE;			// ограничение для вычислений
 				virtualFrequency = Math.min(Math.max(frequencyFocus + (long) ((virtualFrequency - frequencyFocus) / xScale),
 						source.getMinFrequency() - source.getSampleRate() / 2), source.getMaxFrequency() + source.getSampleRate() / 2);
 
@@ -687,6 +693,9 @@ public class AnalyzerSurface extends SurfaceView implements SurfaceHolder.Callba
 		}
 		return true;
 	}
+
+
+
 
 	@Override
 	public boolean onScaleBegin(ScaleGestureDetector detector) {

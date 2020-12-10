@@ -157,7 +157,7 @@ public class AnalyzerProcessingLoop extends Thread {
 
 
 			// Push the results on the surface:
-			view.draw(newMag(), frequency, sampleRate*2, frameRate, load);
+			view.draw(newMag(), frequency, Scan(), frameRate, load);
 
 			// Calculate the remaining time in this frame (according to the frame rate) and sleep
 			// for that time:
@@ -223,22 +223,35 @@ public class AnalyzerProcessingLoop extends Thread {
 		}
 	}
 
+	private int Scan() {					// чтобы адекватно работал зум при большом приближении
+		if (view.getVirtualSampleRate() < view.SR())
+			return view.SR();
+		else return view.getVirtualSampleRate();
+	}
+
+	private int koef() {					// те же цели, что и для Scan()
+		int koef = view.getVirtualSampleRate() / view.SR();
+		if (koef < 1)
+			return 1;
+	return koef;
+	}
+
 	private float[] newMag() {
 		int sizeMag = mag.length;
 		float[] newMag;
-		if (sizeMag % 2 == 0) {  newMag = new float[(sizeMag / 2)*2  ];
+		if (sizeMag % koef() == 0) {  newMag = new float[(sizeMag / koef())];
 		}
 		else {
-			newMag = new float[((sizeMag / 2) + 1) * 2];
+			newMag = new float[((sizeMag / koef()) + 1)];
 		}
 		int count = 0 ;
 
-		for (int i = 0; i<2; ++i) {
-			for (int j = 0; j < sizeMag; j+=2) {
+
+			for (int j = 0; j < sizeMag; j+=koef()) {
 				newMag[count] = mag[j];
 				count++;
 			}
-		}
+
 
 		return newMag;
 	}
